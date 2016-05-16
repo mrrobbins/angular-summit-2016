@@ -1,0 +1,15 @@
+{
+  "name": "learn-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "typescript.js",
+  "scripts": {
+    "compile": "tsc typescript.ts",
+    "run": "npm run compile && node typescript.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^1.8.10"
+  }
+}
