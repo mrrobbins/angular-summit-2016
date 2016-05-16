@@ -1,5 +1,18 @@
+<h1>Manage Team</h1>
 <app-card>
+    Update Team: <input #teamName type="text" [(ngModel)]="team.name">
+  <button (click)="teamName.focus()">Focus on name input</button>
+</app-card>
+
+<ul>
+  <li *ngFor="let person of team.people">
+    {{person.name}}
+  </li>
+</ul>
+<app-card *ngFor="let person of team.people">
   <p>
-    Update Team: <input type="text" [(ngModel)]="team.name">
+    <input type="text" [(ngModel)]="person.name">
+    <a [routerLink]="['/detail', person.id]">Details</a>
   </p>
 </app-card>
+

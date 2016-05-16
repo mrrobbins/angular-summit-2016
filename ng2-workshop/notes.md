@@ -26,3 +26,17 @@ j.mp/as-workshop redirect to github
 
 ## Inject providers
 - no more worry on minified code
+
+## addtl projects
+- angular / zone.js - hooks for all browser events
+-- no more forced digesting
+
+## angular-cli.json config
+- defaults.prefix - default is `app`
+-- a shared team component `foo` would have selector `app-foo`
+
+Angular Augury Chrome ext - view directives used
+https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd?hl=en
+
+Componets ARE A Directive WITH A Template
+Transclusion

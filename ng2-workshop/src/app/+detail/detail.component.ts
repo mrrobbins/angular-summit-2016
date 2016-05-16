@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { OnActivate, RouteSegment } from '@angular/router';
+import { TeamService } from '../shared';
 
 @Component({
   moduleId: module.id,
@@ -6,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'detail.component.html',
   styleUrls: ['detail.component.css']
 })
-export class DetailComponent implements OnInit {
+export class DetailComponent implements OnInit, OnActivate {
+  person;
+  routerOnActivate(curr:RouteSegment):void {
+    const id = curr.getParam('id');
+    console.log('person id: ' + id);
+    this.person = this.team.people.find(person => person.id === +id);
+  }
 
-  constructor() {}
+  constructor(public team:TeamService) {}
 
   ngOnInit() {
   }
