@@ -10,6 +10,6 @@ Update Team: <input #teamName type="text" [(ngModel)]="team.name">
 
 
 <app-card [person]="person"
-          (edit)="onEdit($event)"
+          (editBtn)="onEdit($event)"
           *ngFor="let person of team.people">
 </app-card>
