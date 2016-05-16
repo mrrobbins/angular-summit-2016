@@ -1,4 +1,4 @@
-Angular 2 Workshop
+Angular 2 Workshop - Monday 2016-05-16
 
 ## setup
 install cli.angular.io
