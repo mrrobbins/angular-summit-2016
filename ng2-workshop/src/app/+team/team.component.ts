@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ROUTER_DIRECTIVES } from '@angular/router';
+import { Router, ROUTER_DIRECTIVES } from '@angular/router';
 import { TeamService, CardComponent } from '../shared';
 
 @Component({
@@ -10,8 +10,10 @@ import { TeamService, CardComponent } from '../shared';
   directives: [CardComponent, ROUTER_DIRECTIVES]
 })
 export class TeamComponent implements OnInit {
-
-  constructor(public team:TeamService) {}
+  onEdit(event) {
+    this.router.navigate(['/detail', event.id]);
+  }
+  constructor(public team:TeamService, private router: Router) {}
 
   ngOnInit() {
   }
