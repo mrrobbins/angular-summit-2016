@@ -14,7 +14,8 @@ j.mp/as-workshop redirect to github
 ## Imports
  - Aliased imports to modules under node_modules
 
-## lazy loading components
+## lazy loading component
+- systemjs
 
 ## Routing
 - `LocationStrategy.HASH` - switch between HASH based and HTML5 navigation
@@ -22,3 +23,6 @@ j.mp/as-workshop redirect to github
 
 ## Decorators 
 - @Component function applied to thing below it
+
+## Inject providers
+- no more worry on minified code

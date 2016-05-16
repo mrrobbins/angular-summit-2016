@@ -1,0 +1,7 @@
+.router-link-active {
+  color: red;
+}
+
+:host {
+  font-family: "Arial"
+}
