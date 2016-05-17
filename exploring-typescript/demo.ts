@@ -29,6 +29,14 @@ var multiHello = function(...names: string[]) {
 }
 multiHello('matt', 'rajesh');
 
+// function overloading
+
+
+console.log('Lambdas:');
+var numbers:number[]= [1, 2, 3];
+console.log(numbers.map(function (n) { return n*2 }));
+console.log(numbers.map(n => n*2));
+
 var hello = function(name: string, callback:(msg: string) => string) {
     console.log(callback('hello ' + name));
 }
@@ -37,3 +45,12 @@ hello('matt', function(msg:string) : string {
     return 'returning...';
 });
 
+console.log('Interfaces:');
+interface LatLon {
+    lon: number;
+    lat: number;
+}
+
+var displayLocation = (location:LatLon) => {console.log('LatLon is ' + location.lat + ':' + location.lon)};
+
+displayLocation({lon: 81.34234, lat: 52.432});

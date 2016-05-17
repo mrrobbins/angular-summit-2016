@@ -4,7 +4,9 @@
   "description": "",
   "main": "scratch.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "tsc demo.ts",
+    "prerun": "npm run compile",
+    "run": "node demo.js"
   },
   "keywords": [],
   "author": "",
