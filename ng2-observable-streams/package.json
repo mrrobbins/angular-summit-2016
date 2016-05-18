@@ -1,0 +1,17 @@
+{
+  "name": "exploring-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scratch.js",
+  "scripts": {
+    "compile": "tsc demo.ts",
+    "prerun": "npm run compile",
+    "run": "node demo.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsc": "^1.20150623.0"
+  }
+}
